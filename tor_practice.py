@@ -7,6 +7,10 @@ from fake_useragent import UserAgent
 from stem import Signal
 from stem.control import Controller
 
+#TODO:
+# - tor practice with requests
+# - tor practice with aiohttp session
+
 def new_tor_id():
     with Controller.from_port(port=9051) as controller:
         controller.authenticate()
